@@ -34,6 +34,9 @@ Praktikum ini menggunakan metode **CIDR (Classless Inter-Domain Routing)** pada 
 ### Topologi GNS3
 <img width="1543" height="982" alt="image" src="https://github.com/user-attachments/assets/b359cf02-9098-4502-8055-fb60c4394300" />
 
+### Topologi CPT
+<img width="2821" height="1441" alt="Topologi CPT Revisi 2" src="https://github.com/user-attachments/assets/f7df832f-c59d-4884-af8b-845df7e2d5b7" />
+
 
 ### Struktur Topologi
 ```
@@ -609,3 +612,72 @@ route add -net 10.78.8.0 netmask 255.255.254.0 gw 10.78.17.146  # A1 via Minasti
 route add -net 10.78.17.156 netmask 255.255.255.252 gw 10.78.17.166  # A13 via Eregion
 route add -net 10.78.16.128 netmask 255.255.255.128 gw 10.78.17.166  # A17 via Eregion
 route add -net 10.78.4.0 netmask 255.255.252.0 gw 10.78
+```
+
+## VLSM
+Untuk metode VLSM, tabel routing yang digunakan kurang lebih sama dengan yang di CIDR.
+
+### Routing CPT
+
+#### Client
+Pada client, kita dapat melakukan config seperti ini.
+
+![WhatsApp Image 2025-11-17 at 23 37 27](https://github.com/user-attachments/assets/5f346a36-fcb5-4e2d-afec-afa94e3fb605)
+
+Dengan ketentuan sebagai berikut.
+```
+<IP Client>
+<Netmask>
+<Gateway>
+```
+
+### Switch
+Jika topologi tersebut terdapat switch, maka dapat melakukan konfigurasi seperti ini.
+
+![WhatsApp Image 2025-11-17 at 23 37 49](https://github.com/user-attachments/assets/5620cc90-928a-4e61-bae1-5a65807a05ab)
+
+Diaman untuk interface yang langsung mengarah ke router diseeting modeny ke trunk.
+
+### Router
+Pada router yang memiliki client, dapat melakukan konfigurasi seperti ini.
+
+![WhatsApp Image 2025-11-17 at 23 38 16](https://github.com/user-attachments/assets/b7620a2a-065f-4d52-b468-f3939177645e)
+
+Dengan format:
+```
+<Gateway>
+<Netmask>
+```
+
+
+### Cara Rtouting.
+
+Cara biar router ke router bisa connect, misalnya terdapat topologi seperti ini.
+```
+router1 <-> router2
+```
+
+a = yang terhubung dengan router itu sendiri
+
+Kita dapat melakukan konfigurasi pada masing-masing router.
+
+Di Router1: 
+```
+ip route <NID Router 2 a> <netmask a> <IP Router 2>
+```
+Di Router 2:
+```
+ip route <NID Router 1 a> <netmask a> <IP Router 1>
+```
+
+agar kedua router dapat terhubung ke client, diperlukan ip routing, baik router1 maupun ke router2. Setiap router perlu membuat ip routing ke masing-masing client. Untuk kodenya seperti ini.
+
+di router1: 
+```
+ip route <NID Client> <netmask client> <IP Router 2 a>
+```
+
+
+
+
+
