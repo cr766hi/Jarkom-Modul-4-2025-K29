@@ -650,7 +650,7 @@ Dengan format:
 ```
 
 
-### Cara Rtouting.
+### Cara Routing
 
 Cara biar router ke router bisa connect, misalnya terdapat topologi seperti ini.
 ```
