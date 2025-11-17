@@ -148,7 +148,7 @@ Prefix IP yang digunakan: **10.78.0.0**
 ### Pengelompokan Subnet dengan CIDR
 
 #### Level I - Penggabungan Awal
-![Pengelompokan 1](./screenshots/pengelompokan-1.png)
+![1](https://github.com/user-attachments/assets/44c6a4ff-d342-4825-ac04-0978216be954)
 
 | Subnet | Gabungan dari | Netmask Akhir |
 |--------|---------------|---------------|
@@ -156,7 +156,7 @@ Prefix IP yang digunakan: **10.78.0.0**
 | B2 | A9 (/23) + A8 (/23) | /22 |
 
 #### Level II
-![Pengelompokan 2](./screenshots/pengelompokan-2.png)
+![2](https://github.com/user-attachments/assets/b0377d48-d856-41fa-9d44-5a7d64681b9f)
 
 | Subnet | Gabungan dari | Netmask Akhir |
 |--------|---------------|---------------|
@@ -165,7 +165,7 @@ Prefix IP yang digunakan: **10.78.0.0**
 | C3 | A15 (/25) + A14 (/28) | /24 |
 
 #### Level III
-![Pengelompokan 3](./screenshots/pengelompokan-3.png)
+![3](https://github.com/user-attachments/assets/c2a132df-ed7a-4162-9131-33d29e5113d1)
 
 | Subnet | Gabungan dari | Netmask Akhir |
 |--------|---------------|---------------|
@@ -175,7 +175,7 @@ Prefix IP yang digunakan: **10.78.0.0**
 | D4 | A21 (/23) + C2 (/25) | /22 |
 
 #### Level IV
-![Pengelompokan 4](./screenshots/pengelompokan-4.png)
+![4](https://github.com/user-attachments/assets/b20d3dfb-a897-4a4a-9380-55661ef83dce)
 
 | Subnet | Gabungan dari | Netmask Akhir |
 |--------|---------------|---------------|
@@ -185,14 +185,14 @@ Prefix IP yang digunakan: **10.78.0.0**
 | E4 | A5 (/30) + A3 (/22) | /21 |
 
 #### Level V
-![Pengelompokan 5](./screenshots/pengelompokan-5.png)
+![5](https://github.com/user-attachments/assets/49ab61d8-1be7-42ce-a81c-a0d681856bbd)
 
 | Subnet | Gabungan dari | Netmask Akhir |
 |--------|---------------|---------------|
 | F1 | E2 (/21) + D3 (/20) | /19 |
 
 #### Level VI
-![Pengelompokan 6](./screenshots/pengelompokan-6.png)
+![6](https://github.com/user-attachments/assets/506ad002-a692-47a6-b75b-11dc1cb9b612)
 
 | Subnet | Gabungan dari | Netmask Akhir |
 |--------|---------------|---------------|
@@ -200,7 +200,7 @@ Prefix IP yang digunakan: **10.78.0.0**
 | G2 | E3 (/20) + E4 (/21) | /19 |
 
 #### Level VII
-![Pengelompokan 7](./screenshots/pengelompokan-7.png)
+![7](https://github.com/user-attachments/assets/498411a5-fc1d-4984-9824-65f63c690f47)
 
 | Subnet | Gabungan dari | Netmask Akhir |
 |--------|---------------|---------------|
@@ -209,14 +209,15 @@ Prefix IP yang digunakan: **10.78.0.0**
 | H3 | G2 (/19) + A7 (/30) | /18 |
 
 #### Level VIII
-![Pengelompokan 8](./screenshots/pengelompokan-8.png)
+![8](https://github.com/user-attachments/assets/f20baa0e-2836-4242-8ade-6124504574d2)
 
 | Subnet | Gabungan dari | Netmask Akhir |
 |--------|---------------|---------------|
 | I1 | H3 (/18) + H2 (/17) | /16 |
 
 #### Level IX
-![Pengelompokan 9](./screenshots/pengelompokan-9.png)
+![9](https://github.com/user-attachments/assets/2df5bd28-4802-4ae9-aac7-e124cdc15b07)
+
 
 | Subnet | Gabungan dari | Netmask Akhir |
 |--------|---------------|---------------|
