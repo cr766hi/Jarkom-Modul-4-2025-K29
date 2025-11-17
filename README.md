@@ -32,8 +32,8 @@
 Praktikum ini menggunakan metode **CIDR (Classless Inter-Domain Routing)** pada **GNS3**. dan **VLSM** pada **Cisco Packet Tracer**
 
 ### Topologi GNS3
-![Topologi GNS3](./screenshots/topologi-gns3.png)
-> *Screenshot topologi lengkap dengan semua router, switch, dan client*
+<img width="1543" height="982" alt="image" src="https://github.com/user-attachments/assets/b359cf02-9098-4502-8055-fb60c4394300" />
+
 
 ### Struktur Topologi
 ```
