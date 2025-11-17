@@ -229,9 +229,7 @@ Prefix IP yang digunakan: **10.78.0.0**
 
 ---
 
-## 📍 Pembagian IP Address
-
-Berikut adalah pembagian IP address berdasarkan prefix **10.78.0.0** dengan menggunakan tree CIDR yang telah dibuat:
+## 📍 Pembagian IP Address dan tabel VLSM
 
 | Subnet | Rute Topologi | Network ID | Netmask | Gateway | Broadcast | Range IP Host | Jumlah Host |
 |--------|---------------|------------|---------|---------|-----------|---------------|-------------|
